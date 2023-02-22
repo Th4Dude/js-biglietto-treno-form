@@ -10,25 +10,21 @@
 </head>
 
 <body>
-
-
-
     <main>
         <h1>CALCOLA IL TUO BIGLIETTO</h1>
         <div class="main-container">
-            
-            <div class="biglietto">
+            <div class="form">
                 <div class="container-biglietto">
                     <div>
-                        <div class="label"><label  for="nome">Nome Cognome</label></div>
-                       <div><input class="border-color" type="text" id="nomeUtente" name="nome"></div>
+                        <div class="label"><label for="nome">Nome Cognome</label></div>
+                        <div><input class="border-color" type="text" id="nomeUtente" name="nome"></div>
                     </div>
                     <div>
-                        <div class="label"><label for="km">Km da percorrere:</label></div>
+                        <div class="label"><label for="km">Km da percorrere</label></div>
                         <div><input class="border-color" type="number" id="km" name="km"></div>
                     </div>
                     <div>
-                        <div class="label"><label for="eta">Fascia d'età:</label></div>
+                        <div class="label"><label for="eta">Fascia d'età</label></div>
                         <div>
                             <select class="border-color" id="etaUtente" name="eta">
                                 <option value="minorenni">Minorenne</option>
@@ -38,7 +34,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="container-biglietto">
                     <div class="">
                         <button class="border-color padding-left-right" type="button" id="prezzo">Genera</button>
@@ -49,94 +44,33 @@
 
             <h1>IL TUO BIGLIETTO</h1>
 
-            <div class="biglietto">
-                
-                <h4 class="details">DETTAGLIO PASSEGGERI</h4>
 
+            <div class="biglietto">
+                <h4 class="details">DETTAGLIO PASSEGGERI</h4>
                 <div class="container-02">
                     <div class="small-box">
-                        <h4>Nome passeggero</h4>
+                        <h4 class="padding-top-bottom">Nome passeggero</h4>
                         <h3 id="nome_passegero"></h3>
                     </div>
                     <div>
-                        <h4>Offerta</h4>
+                        <h4 class="padding-top-bottom">Offerta</h4>
                         <h3 id="offerta"></h3>
-                        
                     </div>
                     <div>
-                        <h4>Carrozza</h4>
-                        <h3></h3>
-                        
+                        <h4 class="padding-top-bottom">Carrozza</h4>
+                        <h3 id="random"></h3>
                     </div>
                     <div>
-                        <h4>Codice cp</h4>
-                        <h3></h3>
-                        
+                        <h4 class="padding-top-bottom">Codice cp</h4>
+                        <h3 id="codice"></h3>
                     </div>
                     <div>
-                        <h4>Costo biglietto</h4>
+                        <h4 class="padding-top-bottom">Costo biglietto</h4>
                         <h3 id="costo_biglietto"></h3>
-                        
                     </div>
                 </div>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-
-
-
-
-
-
-
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-
 
         <script src="js/main.js"></script>
 </body>
