@@ -1,29 +1,44 @@
+
 'use strict'
 
-const etaUtente = prompt(`inserisci la tua età`);
-console.log(etaUtente)
+/* variabili */
+let nome = document.getElementById("nomeUtente").value;
+let km = document.getElementById("km").value;
+let eta = document.getElementById("etaUtente").value;
+let prezzoIntero = km * 0.21;
+/* variabili */
 
-const chilometri = prompt(`inserisci quanti km vuoi percorrere`);
-console.log(chilometri)
-
-let prezzoAlchilometro = 0.21;
-
-let prezzoTotale = chilometri * prezzoAlchilometro;
-
-let scontoMinori = prezzoTotale * 20 / 100;
-
-let  scontoOver = prezzoTotale * 40 / 100;
-
-console.log ('Il prezzo totale del biglietto è',prezzoTotale);
-
-if ( etaUtente < 18) {
-    scontoMinori = prezzoTotale * 20 / 100;
-    prezzoTotale = prezzoTotale - scontoMinori;
-    console.log (`Prezzo scontato per minori del 20% per un totale di`, + prezzoTotale.toFixed(2) );
-} else if ( etaUtente >= 65 ) {
-    scontoOver = prezzoTotale * 40 / 100;
-    prezzoTotale = prezzoTotale - scontoOver;
-    console.log (`Prezzo scontato per over 65 del 40% per un totale di`, + prezzoTotale.toFixed(2) );
+/* if */
+ 
+let prezzoFinale;
+if (eta === 'minorenni') {  
+    prezzoFinale = prezzoIntero * 0.8;
+} else if (eta === 'over65') { 
+    prezzoFinale = prezzoIntero * 0.6;
+} else {
+    prezzoFinale = prezzoIntero;
 }
+/* if */
 
-document.querySelector('h4').innerHTML = `Prezzo del biglietto ` +  prezzoTotale
+
+const inputButton = document.getElementById('prezzo');
+
+inputButton.addEventListener('click', 
+    function() {
+        document.querySelector('h2').innerHTML = `${prezzoFinale.toFixed(2)} €`
+    }
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
