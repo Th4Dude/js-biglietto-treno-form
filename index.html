@@ -14,35 +14,43 @@
 
 
     <main>
-        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <h1>CALCOLA IL TUO BIGLIETTO</h1>
         <div class="container">
             
             <div class="biglietto-01">
+                <div class="container-biglietto-01">
+                    <div class="small-box">
+                        <div><label for="nome">Nome Cognome</label></div>
+                       <div><input type="text" id="nomeUtente" name="nome"></div>
+                    </div>
+                    <div class="small-box">
+                        <div><label for="km">Km da percorrere:</label></div>
+                        <div><input type="number" id="km" name="km"></div>
+                    </div>
+                    <div class="small-box">
+                        <div><label for="eta">Fascia d'età:</label></div>
+                        <div>
+                            <select id="etaUtente" name="eta">
+                                <option value="minorenni">Minorenne</option>
+                                <option value="">Maggiorenne</option>
+                                <option value="over65">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="small-box">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nomeUtente" name="nome">
-                </div>
                 <div>
-                    <label for="km">Chilometri da percorrere:</label>
-                    <input type="number" id="km" name="km">
+                    <div class="buttons">
+                        <button type="button" id="prezzo">Genera</button>
+                        <input type="reset" value="Annulla">
+                    </div>
+
+
+
                 </div>
-                <div>
-                    <label for="eta">Età del passeggero:</label>
-                    <select id="etaUtente" name="eta">
-                        <option value="minorenni">Minorenne</option>
-                        <option value="">Maggiorenne</option>
-                        <option value="over65">Over 65</option>
-                    </select>
-                </div>
-                <div class="buttons">
-                    <button type="button" id="prezzo">Genera</button>
-                    <input type="reset" value="Annulla">
-                </div>
-                <h2></h2>
 
             </div>
-            <h1>Il tuo biglietto</h1>
+            <h1>IL TUO BIGLIETTO</h1>
             <div class="biglietto-02">
                 
                 <h4>dettaglio passeggeri</h4>
@@ -55,7 +63,7 @@
                     </div>
                     <div>
                         <h4>offerta</h4>
-                        <h3></h3>
+                        <h3 id="offerta"></h3>
                         
                     </div>
                     <div>
