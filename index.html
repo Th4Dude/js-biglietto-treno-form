@@ -15,22 +15,22 @@
 
     <main>
         <h1>CALCOLA IL TUO BIGLIETTO</h1>
-        <div class="container">
+        <div class="main-container">
             
-            <div class="biglietto-01">
-                <div class="container-biglietto-01">
-                    <div class="small-box">
-                        <div><label for="nome">Nome Cognome</label></div>
-                       <div><input type="text" id="nomeUtente" name="nome"></div>
+            <div class="biglietto">
+                <div class="container-biglietto">
+                    <div>
+                        <div class="label"><label  for="nome">Nome Cognome</label></div>
+                       <div><input class="border-color" type="text" id="nomeUtente" name="nome"></div>
                     </div>
-                    <div class="small-box">
-                        <div><label for="km">Km da percorrere:</label></div>
-                        <div><input type="number" id="km" name="km"></div>
+                    <div>
+                        <div class="label"><label for="km">Km da percorrere:</label></div>
+                        <div><input class="border-color" type="number" id="km" name="km"></div>
                     </div>
-                    <div class="small-box">
-                        <div><label for="eta">Fascia d'età:</label></div>
+                    <div>
+                        <div class="label"><label for="eta">Fascia d'età:</label></div>
                         <div>
-                            <select id="etaUtente" name="eta">
+                            <select class="border-color" id="etaUtente" name="eta">
                                 <option value="minorenni">Minorenne</option>
                                 <option value="">Maggiorenne</option>
                                 <option value="over65">Over 65</option>
@@ -39,50 +39,45 @@
                     </div>
                 </div>
                 
-                <div>
-                    <div class="buttons">
-                        <button type="button" id="prezzo">Genera</button>
-                        <input type="reset" value="Annulla">
+                <div class="container-biglietto">
+                    <div class="">
+                        <button class="border-color padding-left-right" type="button" id="prezzo">Genera</button>
+                        <input class="border-color padding-left-right" type="reset" value="Annulla">
                     </div>
-
-
-
                 </div>
-
             </div>
+
             <h1>IL TUO BIGLIETTO</h1>
-            <div class="biglietto-02">
+
+            <div class="biglietto">
                 
-                <h4>dettaglio passeggeri</h4>
+                <h4 class="details">DETTAGLIO PASSEGGERI</h4>
 
                 <div class="container-02">
-                    <div>
-                        <h4>nome passeggero</h4>
+                    <div class="small-box">
+                        <h4>Nome passeggero</h4>
                         <h3 id="nome_passegero"></h3>
-                        
                     </div>
                     <div>
-                        <h4>offerta</h4>
+                        <h4>Offerta</h4>
                         <h3 id="offerta"></h3>
                         
                     </div>
                     <div>
-                        <h4>carrozza</h4>
+                        <h4>Carrozza</h4>
                         <h3></h3>
                         
                     </div>
                     <div>
-                        <h4>codice cp</h4>
+                        <h4>Codice cp</h4>
                         <h3></h3>
                         
                     </div>
                     <div>
-                        <h4>costo biglietto</h4>
+                        <h4>Costo biglietto</h4>
                         <h3 id="costo_biglietto"></h3>
                         
                     </div>
-
-
                 </div>
                 
                 
